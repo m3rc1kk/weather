@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Mulish:wght@600;700;800&display=swap');
+
+*{
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    background-color: #97C1FF;
+    
+}
+
+
+.main_title {
+    text-align: center;
+    margin-top: 215px;
+    font-weight: black;
+    font-size: 40px;
+    color: #262626;
+}
+
+
+.city {
+    
+    text-align: center;
+    
+}
+
+.inpup_city{
+    
+    background-color: #404040;
+    font-family: 'Montserrat', sans-serif;
+    width: 500px;
+    height: 80px;
+    border-radius: 20px;
+    border: 0;
+    font-size: 25px;
+    padding-left: 20px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+
+
+
+.btn_city{
+    margin-top: 25px;
+    
+}
+
+.button_city, .delete_button{
+    height: 60px;
+    width: 300px;
+    background-color: #0085CF;
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+.button_city:hover, .delete_button:hover{
+    background-color: #fff;
+    color: #0085CF;
+}
+
+
+.weather_container{
+    max-width: 1400px;
+    
+    margin: 0 auto;
+}
+
+
+.weather_cities {
+    
+    margin-top: 40px;
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.weather_city{
+    position: relative;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 430px;
+    background-color: #007BED;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+
+
+.weather_city_name {
+    font-weight: bolder;
+    padding: 0px 0 0 32px;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.weather_city_temp {
+    font-weight: 600;
+    padding: 0 0 0 33px;
+    margin-top: -45px;
+    font-size: 25px;
+}
+
+
+.weather_city_desc{
+    font-weight: lighter;
+    padding: 0 0 0 32px;
+    margin-top: -17px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+.city_image{
+   position: absolute;
+   top: 50px;
+   left: 330px
+}
+
+.weather_city_icon{
+    width: 60px;
+}
+
+
+
+
+.delete_main {
+    text-align: center;
+    font-weight: black;
+    font-size: 60px;
+    color: #262626;
+}
+
+
+
+.delete_cont {
+    text-align: center;
+    margin-top: 350px;
+}
+
+
+
+
+
+
+.btn_delete_all{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 810px;
+    padding: 17px;
+    background-color: #FF5252;
+    border: 0;
+    border-radius: 20px;
+    width: 266px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: .2s;
+}
+
+.btn_delete_all:hover{
+    background-color: #262626;
+}
+
+
+
+.city_form{
+    background-color:#424242;
+    border: 0;
+    border-radius: 10px;
+    width: 500px;
+    height: 70px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+}

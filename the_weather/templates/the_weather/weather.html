@@ -1,0 +1,51 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+</head>
+<body>
+    <div class="main_title">
+        <h1>Do you want to know the weather?</h1>
+    </div>
+
+
+    <div class="city">
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.city|add_class:'city_form'|attr:'placeholder:City' }}
+            
+            <div class="btn_city">
+                
+                <button class="button_city" type="submit">Check</button>
+                
+            </div>
+        </form>
+        <div class="button_delete_all">
+            <a class = 'btn_delete_all' href='{% url "delete-all" %}'>Delete all</a>
+        </div>
+    </div>
+
+    <div class="weather_container">
+        <div class="weather_cities">
+            {% for weath in weather_data %}
+            <div class="weather_city">
+                
+                <h2 class="weather_city_name">{{ weath.city }}</h2>
+                <p class="weather_city_temp">{{weath.temp}}°C</p>
+                <p class="weather_city_desc">{{ weath.desc }}</p>
+                
+                
+                <div class="city_image">
+                    <img class = 'weather_city_icon' src="http://openweathermap.org/img/w/{{weath.icon}}.png" >
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>

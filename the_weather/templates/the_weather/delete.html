@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    <title>Delete</title>
+</head>
+<body>
+    <div class="delete_cont">
+        <form action="" method="post">
+            <h2 class="delete_main">Are you sure?</h2>
+            {% csrf_token %}
+        
+            {{form}}
+            <button class = 'delete_button' type="submit">Delete</button>
+        </form>
+    </div>
+</body>
+</html>
